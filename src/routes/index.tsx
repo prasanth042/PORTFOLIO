@@ -4,7 +4,7 @@ import {
   Mail, Phone, MapPin, Github, Linkedin, Download, ArrowRight,
   Code2, Database, Cpu, GraduationCap, ExternalLink, Menu, X,
 } from "lucide-react";
-import heroPortrait from "@/assets/hero-portrait.jpg";
+import heroPortrait from "@/assets/prasanth-portrait.jpg.asset.json";
 import plagiarismImg from "@/assets/plagiarism.jpg";
 import meditrackImg from "@/assets/meditrack.jpg";
 
@@ -140,7 +140,7 @@ function Portfolio() {
           <div className="relative animate-float">
             <div className="absolute inset-0 blur-3xl bg-gradient-to-tr from-primary/40 to-accent/30 rounded-full" />
             <div className="relative glass rounded-3xl overflow-hidden aspect-square max-w-md mx-auto">
-              <img src={heroPortrait} alt="Prasanth C" width={1024} height={1024} className="w-full h-full object-cover" />
+              <img src={heroPortrait.url} alt="Prasanth C" width={1024} height={1024} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@ function Portfolio() {
                     ))}
                   </div>
                   <div className="mt-5 flex gap-3">
-                    <a href="#" className="btn-outline px-4 py-2 rounded-lg text-sm inline-flex items-center gap-2">
+                    <a href="https://github.com/prasanth042" target="_blank" rel="noopener noreferrer" className="btn-outline px-4 py-2 rounded-lg text-sm inline-flex items-center gap-2">
                       <Github size={16} /> Code
                     </a>
                     <a href="#" className="btn-outline px-4 py-2 rounded-lg text-sm inline-flex items-center gap-2">
@@ -258,7 +258,7 @@ function Portfolio() {
               <ContactRow icon={MapPin} label="Location" value="Thiruvannamalai, Tamil Nadu" />
               <div className="flex gap-3 pt-2">
                 <a href="#" aria-label="LinkedIn" className="btn-outline size-11 rounded-xl grid place-items-center"><Linkedin size={18} /></a>
-                <a href="#" aria-label="GitHub" className="btn-outline size-11 rounded-xl grid place-items-center"><Github size={18} /></a>
+                <a href="https://github.com/prasanth042" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="btn-outline size-11 rounded-xl grid place-items-center"><Github size={18} /></a>
                 <a href="mailto:prasanth9626794137@gmail.com" aria-label="Email" className="btn-outline size-11 rounded-xl grid place-items-center"><Mail size={18} /></a>
               </div>
             </div>
@@ -290,7 +290,7 @@ function Portfolio() {
           <p>© {new Date().getFullYear()} Prasanth C. Crafted with care.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-foreground"><Linkedin size={16} /></a>
-            <a href="#" className="hover:text-foreground"><Github size={16} /></a>
+            <a href="https://github.com/prasanth042" target="_blank" rel="noopener noreferrer" className="hover:text-foreground"><Github size={16} /></a>
             <a href="mailto:prasanth9626794137@gmail.com" className="hover:text-foreground"><Mail size={16} /></a>
           </div>
         </div>
