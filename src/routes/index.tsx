@@ -65,7 +65,8 @@ const ACTIVITIES = [
   },
 ];
 const PROJECTS = [
-    {
+  {
+    title: "Plagiarism Detection System",
     img: plagiarismImg,
     desc: "A document similarity checker that compares text content to flag duplicated work and protect academic integrity.",
     tech: ["Java", "SQL", "Text Analysis"],
