@@ -38,7 +38,32 @@ const SKILLS = [
   { name: "DBMS", level: 75, icon: Database },
 ];
 
-const PROJECTS = [
+const ACTIVITIES = [
+  {
+    title: "IoT Workshop — Smart Devices",
+    org: "Hands-on Training Program",
+    desc: "Built sensor-based prototypes using Arduino and ESP32, exploring real-time data monitoring and cloud integration fundamentals.",
+    icon: Cpu,
+  },
+  {
+    title: "Technical Webinar Series",
+    org: "Emerging Technologies",
+    desc: "Attended sessions on AI/ML fundamentals, cloud computing trends, and modern software development practices.",
+    icon: Code2,
+  },
+  {
+    title: "Career Readiness Webinar",
+    org: "Industry Preparation",
+    desc: "Gained insights on resume building, aptitude preparation, and interview strategies for campus placements.",
+    icon: GraduationCap,
+  },
+  {
+    title: "Database & SQL Workshop",
+    org: "Data Management",
+    desc: "Practiced advanced querying, normalization, and database design concepts through guided exercises.",
+    icon: Database,
+  },
+];
   {
     title: "Plagiarism Detection System",
     img: plagiarismImg,
