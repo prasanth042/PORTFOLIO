@@ -24,6 +24,7 @@ const NAV = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
+  { id: "activities", label: "Activities" },
   { id: "projects", label: "Projects" },
   { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
@@ -37,6 +38,32 @@ const SKILLS = [
   { name: "DBMS", level: 75, icon: Database },
 ];
 
+const ACTIVITIES = [
+  {
+    title: "IoT Workshop — Smart Devices",
+    org: "Hands-on Training Program",
+    desc: "Built sensor-based prototypes using Arduino and ESP32, exploring real-time data monitoring and cloud integration fundamentals.",
+    icon: Cpu,
+  },
+  {
+    title: "Technical Webinar Series",
+    org: "Emerging Technologies",
+    desc: "Attended sessions on AI/ML fundamentals, cloud computing trends, and modern software development practices.",
+    icon: Code2,
+  },
+  {
+    title: "Career Readiness Webinar",
+    org: "Industry Preparation",
+    desc: "Gained insights on resume building, aptitude preparation, and interview strategies for campus placements.",
+    icon: GraduationCap,
+  },
+  {
+    title: "Database & SQL Workshop",
+    org: "Data Management",
+    desc: "Practiced advanced querying, normalization, and database design concepts through guided exercises.",
+    icon: Database,
+  },
+];
 const PROJECTS = [
   {
     title: "Plagiarism Detection System",
@@ -139,8 +166,8 @@ function Portfolio() {
           </div>
           <div className="relative animate-float">
             <div className="absolute inset-0 blur-3xl bg-gradient-to-tr from-primary/40 to-accent/30 rounded-full" />
-            <div className="relative glass rounded-3xl overflow-hidden aspect-square max-w-md mx-auto">
-              <img src={heroPortrait.url} alt="Prasanth C" width={1024} height={1024} className="w-full h-full object-cover" />
+            <div className="relative glass rounded-3xl overflow-hidden aspect-[3/5] max-w-sm mx-auto">
+              <img src={heroPortrait.url} alt="Prasanth C" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -193,10 +220,33 @@ function Portfolio() {
         </div>
       </section>
 
+      {/* ACTIVITIES */}
+      <section id="activities" className="section-pad">
+        <div className="mx-auto max-w-5xl px-6">
+          <SectionHeading eyebrow="03 — Activities" title="Webinars & Workshops" />
+          <div className="grid md:grid-cols-2 gap-4 mt-12">
+            {ACTIVITIES.map((a, i) => (
+              <div key={a.title} className="glass rounded-2xl p-6 animate-fade-up" style={{ animationDelay: `${i * 80}ms` }}>
+                <div className="flex items-start gap-4">
+                  <div className="size-10 rounded-lg bg-primary/15 text-primary grid place-items-center shrink-0">
+                    <a.icon size={20} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">{a.title}</h3>
+                    <p className="text-sm text-primary mt-1">{a.org}</p>
+                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PROJECTS */}
       <section id="projects" className="section-pad">
         <div className="mx-auto max-w-6xl px-6">
-          <SectionHeading eyebrow="03 — Projects" title="Things I've built" />
+          <SectionHeading eyebrow="04 — Projects" title="Things I've built" />
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             {PROJECTS.map((p) => (
               <article key={p.title} className="glass rounded-2xl overflow-hidden group">
@@ -229,7 +279,7 @@ function Portfolio() {
       {/* EDUCATION */}
       <section id="education" className="section-pad">
         <div className="mx-auto max-w-3xl px-6">
-          <SectionHeading eyebrow="04 — Education" title="Academic journey" />
+          <SectionHeading eyebrow="05 — Education" title="Academic journey" />
           <div className="mt-12 relative pl-8 border-l-2 border-primary/30">
             <TimelineItem
               title="B.E. Computer Science and Engineering"
@@ -250,7 +300,7 @@ function Portfolio() {
       {/* CONTACT */}
       <section id="contact" className="section-pad">
         <div className="mx-auto max-w-5xl px-6">
-          <SectionHeading eyebrow="05 — Contact" title="Let's work together" />
+          <SectionHeading eyebrow="06 — Contact" title="Let's work together" />
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             <div className="glass rounded-2xl p-8 space-y-5">
               <ContactRow icon={Mail} label="Email" value="prasanth9626794137@gmail.com" href="mailto:prasanth9626794137@gmail.com" />
