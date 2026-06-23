@@ -140,7 +140,7 @@ function Portfolio() {
           <div className="relative animate-float">
             <div className="absolute inset-0 blur-3xl bg-gradient-to-tr from-primary/40 to-accent/30 rounded-full" />
             <div className="relative glass rounded-3xl overflow-hidden aspect-square max-w-md mx-auto">
-              <img src={heroPortrait} alt="Prasanth C" width={1024} height={1024} className="w-full h-full object-cover" />
+              <img src={heroPortrait.url} alt="Prasanth C" width={1024} height={1024} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
