@@ -4,7 +4,7 @@ import {
   Mail, Phone, MapPin, Github, Linkedin, Download, ArrowRight,
   Code2, Database, Cpu, GraduationCap, ExternalLink, Menu, X,
 } from "lucide-react";
-import heroPortrait from "@/assets/hero-portrait.jpg";
+import heroPortrait from "@/assets/prasanth-portrait.jpg.asset.json";
 import plagiarismImg from "@/assets/plagiarism.jpg";
 import meditrackImg from "@/assets/meditrack.jpg";
 
